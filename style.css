@@ -1,0 +1,32 @@
+body {
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+}
+
+.event-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Loader Animation */
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3b82f6;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
